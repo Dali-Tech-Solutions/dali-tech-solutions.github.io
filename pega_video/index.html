@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pega Video </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #000; /* Fundo preto */
+      color: #fff;           /* Texto branco */
+    }
+
+    /* Seção Hero */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      text-align: center;
+      background: #000;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+    .hero .cta {
+      background-color: #ff0000; /* Botão vermelho */
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .hero .cta:hover {
+      background-color: #cc0000; /* Escurece um pouco no hover */
+    }
+
+    /* Seção Recursos */
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 60px 20px;
+      background: #111; /* Preto mais claro */
+    }
+    .feature-item {
+      flex: 1 1 200px;
+      margin: 20px;
+      max-width: 300px;
+      text-align: center;
+    }
+    .feature-item img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    .feature-item h3 {
+      margin-bottom: 10px;
+      font-size: 1.2rem;
+      color: #ff0000; /* Destaque em vermelho */
+    }
+
+    /* Seção Screenshots */
+    .screenshots {
+      padding: 60px 20px;
+      text-align: center;
+      background: #000;
+    }
+    .screenshots h2 {
+      margin-bottom: 30px;
+      color: #ff0000;
+    }
+    .screenshot-img {
+      max-width: 200px;
+      margin: 10px;
+      border: 2px solid #333;
+      border-radius: 8px;
+    }
+
+    /* Rodapé */
+    footer {
+      padding: 40px 20px;
+      background: #111;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ff0000;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Seção Hero -->
+  <header class="hero">
+    <img src="img/logo.png" alt="Pega Video" style="width: 100px; margin-bottom: 20px;">
+    <h1>Baixe Vídeos de Redes Sociais</h1>
+    <p>Com o Pega Video, você salva e compartilha seus vídeos favoritos de forma simples e rápida.</p>
+    <a href="https://play.google.com/store/apps/details?id=br.com.pegavideo&hl=pt_BR" class="cta">Baixar Agora</a>
+  </header>
+
+  <!-- Seção Recursos -->
+  <section class="features">
+    <div class="feature-item">
+		<svg 
+			width="64" height="64" 
+			viewBox="0 0 24 24" 
+			fill="none" 
+			stroke="#FF0000" 
+			stroke-width="2" 
+			stroke-linecap="round" 
+			stroke-linejoin="round"
+		>
+		  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+		</svg>
+      <h3>Rápido</h3>
+      <p>Download de vídeos em segundos, sem complicações.</p>
+    </div>
+    <div class="feature-item">
+		<svg 
+			width="64" height="64" 
+			viewBox="0 0 24 24" 
+			fill="none" 
+			stroke="#FF0000" 
+			stroke-width="2" 
+			stroke-linecap="round" 
+			stroke-linejoin="round"
+		>
+		  <polygon points="12 2 15 10 23 10 17 14 19 22 12 17 5 22 7 14 1 10 9 10 12 2"></polygon>
+		</svg>
+
+      <h3>Qualidade</h3>
+      <p>Baixe seus vídeos em alta resolução sem perder detalhes.</p>
+    </div>
+    <div class="feature-item">
+		<svg 
+			width="64" height="64" 
+			viewBox="0 0 24 24" 
+			fill="none" 
+			stroke="#FF0000" 
+			stroke-width="2" 
+			stroke-linecap="round" 
+			stroke-linejoin="round"
+		>
+		  <path d="M20 6L9 17l-5-5"></path>
+		</svg>
+      <h3>Compatível</h3>
+      <p>Suporte para as principais redes sociais do mercado.</p>
+    </div>
+  </section>
+
+  <!-- Seção Screenshots -->
+  <section class="screenshots">
+    <h2>Veja o App em Ação</h2>
+    <img src="img/tela_1.png" alt="Tela 1" class="screenshot-img"/>
+    <img src="img/tela_2.png" alt="Tela 2" class="screenshot-img"/>
+    <img src="img/tela_3.png" alt="Tela 3" class="screenshot-img"/>
+    <img src="img/tela_4.png" alt="Tela 4" class="screenshot-img"/>
+    <img src="img/tela_5.png" alt="Tela 5" class="screenshot-img"/>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2025 Pega Video. Todos os direitos reservados.</p>
+    <a href="https://dali-tech-solutions.github.io/public/pega_video/termo_uso/termo_uso_v1.0.html">Termos de Uso</a> | 
+    <a href="https://dali-tech-solutions.github.io/public/pega_video/politica_privacidade/politica_privacidade_v1.0.html">Política de Privacidade</a>
+  </footer>
+</body>
+</html>
