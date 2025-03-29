@@ -4,6 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineInfo</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=br.com.cineinfo";
+            }
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/br/app/cineinfo/id6743642665";
+            }
+        });
+    </script>
     <style>
         :root {
             --primary-color: #ff0000; /* vermelho */
@@ -102,7 +113,7 @@
     </section>
 
     <section class="image-gallery">
-        <img src="imagens/cineinfo1.png" alt="Imagem 2">
+        <img src="imagens/cineinfo2.png" alt="Imagem 2">
         <img src="imagens/cineinfo3.png" alt="Imagem 3">
         <img src="imagens/cineinfo4.png" alt="Imagem 4">
         <img src="imagens/cineinfo5.png" alt="Imagem 5">
