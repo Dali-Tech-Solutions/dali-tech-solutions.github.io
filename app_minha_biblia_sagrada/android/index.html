@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Minha Bíblia Sagrada</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff9e6;
+      color: #333;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #ffcc00;
+      color: #000;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 0;
+    }
+
+    .features, .reasons {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #cc9900;
+      margin-bottom: 20px;
+      animation: fadeInLeft 1s ease-in-out;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    ul li::before {
+      content: '✅';
+      position: absolute;
+      left: 0;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+
+    .gallery div {
+      width: calc(20% - 20px);
+      height: 180px;
+      background-color: #ffe680;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeInZoom 1s ease-in-out;
+    }
+
+    .call-to-action {
+      text-align: center;
+      background-color: #ffcc00;
+      padding: 40px 20px;
+      border-radius: 8px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .call-to-action h3 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+
+    .call-to-action p {
+      font-size: 1.2rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-30px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInZoom {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .gallery div {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .call-to-action h3 {
+        font-size: 1.4rem;
+      }
+      .call-to-action p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>📖 App Minha Bíblia Sagrada</h1>
+</header>
+
+<div class="container">
+  <section class="features">
+    <h2>O app perfeito para quem deseja estudar, ler e se aprofundar na Palavra de Deus</h2>
+    <ul>
+      <li>Navegação intuitiva por livros e capítulos</li>
+      <li>Busca por nome dos livros (sem acento ou com)</li>
+      <li>Alterar versão da Bíblia facilmente</li>
+      <li>Marcar capítulos favoritos para leitura posterior</li>
+      <li>Interface limpa e imersiva para leitura confortável</li>
+      <li>Suporte a múltiplas versões da Bíblia</li>
+    </ul>
+  </section>
+
+  <section class="reasons">
+    <h2>Por que escolher o App Minha Bíblia Sagrada?</h2>
+    <ul>
+      <li>Design moderno e agradável</li>
+      <li>Ideal para estudos, devocionais e leituras diárias</li>
+      <li>Leve, rápido e fácil de usar</li>
+      <li>Totalmente em português</li>
+    </ul>
+  </section>
+
+  <section class="image-galery">
+    <img width="200" src="../imagens/img.png" alt="Imagem 2">
+    <img width="200" src="../imagens/img_1.png" alt="Imagem 2">
+    <img width="200" src="../imagens/img_2.png" alt="Imagem 2">
+    <img width="200" src="../imagens/img_3.png" alt="Imagem 2">
+  </section>
+
+  <section class="call-to-action">
+    <h3>Baixe agora o Minha Bíblia Sagrada</h3>
+    <h2><a href="https://play.google.com/store/apps/details?id=com.dalitechsolutions.app_minha_biblia_sagrada&pli=1">Clique aqui para baixar</a></h2>
+    <p>Tenha a Palavra de Deus sempre com você, onde estiver! 🙏</p>
+  </section>
+</div>
+</body>
+</html>
