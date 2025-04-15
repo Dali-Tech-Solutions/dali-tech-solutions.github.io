@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>App Minha Bíblia Sagrada - Landing Page</title>
+
+  <!-- Google Fonts: EB Garamond e Merriweather -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+          href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+          rel="stylesheet"
+  >
+
+  <style>
+    /* Reseta margens e paddings */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Merriweather', serif;
+      background-color: #F5F5DC; /* Fundo que remete a papel antigo */
+      color: #5D331B;           /* Tom de marrom para o texto */
+      line-height: 1.6;
+    }
+
+    /* Cabeçalho com logo e botão de menu (caso queira um menu fixo) */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 2rem;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    header .logo span {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    nav a {
+      text-decoration: none;
+      color: #5D331B;
+      margin: 0 0.5rem;
+      font-weight: 600;
+    }
+
+    /* Sessão Hero */
+    .hero {
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+    }
+    .hero h1 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+    .hero .btn {
+      display: inline-block;
+      background-color: #8B4513;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .hero .btn:hover {
+      background-color: #A0522D;
+    }
+
+    /* Seção de Recursos (Features) */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .feature-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .feature-card h3 {
+      font-family: 'EB Garamond', serif;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #5D331B;
+    }
+    .feature-card p {
+      font-size: 1rem;
+    }
+
+    /* Seção “Veja o App em Ação” (Screenshots) */
+    .screenshots {
+      max-width: 1000px;
+      margin: 3rem auto 4rem;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .screenshots h2 {
+      font-family: 'EB Garamond', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    .screenshots-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .screenshots-container img {
+      width: 140px;
+      height: auto;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+    }
+
+    /* Rodapé (Footer) */
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      padding: 2rem 1rem;
+      background-color: #efe8d0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Cabeçalho -->
+<header>
+  <div class="logo">
+    <!-- Ajuste o caminho do logo -->
+    <img src="img/playstore-icon.png" alt="Logo App Minha Bíblia Sagrada">
+    <span>App Minha Bíblia Sagrada</span>
+  </div>
+  <nav>
+    <!-- Links de navegação, se desejar -->
+    <!-- <a href="#features">Recursos</a>
+    <a href="#screenshots">Screenshots</a>
+    <a href="#footer">Contato</a> -->
+  </nav>
+</header>
+
+<!-- Sessão Hero -->
+<section class="hero">
+  <h1>Baixe Agora o App Minha Bíblia Sagrada</h1>
+  <p>
+    Leitura fácil, completa e inspiradora. Desfrute de recursos exclusivos
+    e leve a Palavra onde quer que você esteja.
+  </p>
+  <a href="#" class="btn">Baixar Agora</a>
+</section>
+
+<!-- Seção de Recursos (Features) -->
+<section id="features" class="features">
+  <div class="feature-card">
+    <!-- Ajuste o ícone de acordo com sua preferência -->
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5D331B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="13 2 3 14 12 14 11 22 21 10 13 10 13 2"/>
+    </svg>
+
+    <h3>Rápido</h3>
+    <p>Abra e leia seus versículos sem complicações, no menor tempo possível.</p>
+  </div>
+  <div class="feature-card">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5D331B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="12 2 15 9 22 9 17 14 19 22 12 18 5 22 7 14 2 9 9 9 12 2"/>
+    </svg>
+
+    <h3>Completo</h3>
+    <p>Acesso a diversas versões, temas, notas e muito mais — tudo na palma da sua mão.</p>
+  </div>
+  <div class="feature-card">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#5D331B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 4h7a4 4 0 0 1 4 4v12a2 2 0 0 0 2 2h3" />
+      <path d="M4 4v16a2 2 0 0 0 2 2h7" />
+      <path d="M16 4v6l-2-1-2 1V4" />
+    </svg>
+
+    <h3>Interativo</h3>
+    <p>Marque, compartilhe e pesquise passagens com um toque.</p>
+  </div>
+</section>
+
+<!-- Seção “Veja o App em Ação” -->
+<section id="screenshots" class="screenshots">
+  <h2>Veja o App em Ação</h2>
+  <div class="screenshots-container">
+    <!-- Ajuste as imagens com as capturas de tela do aplicativo -->
+    <img src="img/2.png" alt="Tela 1" class="screenshot-img"/>
+    <img src="img/3.png" alt="Tela 2" class="screenshot-img"/>
+    <img src="img/4.png" alt="Tela 3" class="screenshot-img"/>
+    <img src="img/5.png" alt="Tela 4" class="screenshot-img"/>
+    <img src="img/6.png" alt="Tela 5" class="screenshot-img"/>
+    <img src="img/7.png" alt="Tela 5" class="screenshot-img"/>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer id="footer">
+  <p>&copy; 2025 App Minha Bíblia Sagrada. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
